@@ -1,6 +1,6 @@
 //Arrow function js
 
-class Employee {
+/*class Employee {
   constructor(name) {
     this.name = name;
   }
@@ -129,4 +129,35 @@ const changeProducts = () =>
 
 console.log(changeProducts());
 
-console.log(products);
+console.log(products);*/
+
+// lib.js
+
+// export function square(x) {
+//   return x * x;
+// }
+
+// export const sum = (x) => {
+//   return x + x;
+// };
+
+// //main.js
+
+// import { square, sum } from "lib";
+
+// import * as library from "lib"; //every exported module in the lib and uses the alias Library
+
+//ES6 destructuring
+
+// let { address } = { address: { city: " New York", country: "USA" } };
+
+// let { city, country } = address;
+
+// console.log(city);
+// console.log(country);
+
+let object1 = { firstName: "John", lastName: "Brown" };
+let object2 = { age: 25 };
+
+let newObject1 = { ...object1, ...object2 };
+console.log(newObject1);
